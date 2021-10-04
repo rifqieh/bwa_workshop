@@ -34,62 +34,114 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              Container(
-                width: 300,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Colors.amber,
-                  borderRadius: BorderRadius.circular(30),
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                      'assets/kurama.jpeg',
+        child: Column(
+          children: [
+            SizedBox(
+              height: 30,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(30),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/kurama.jpeg',
+                        ),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Kurama Naruto',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Kurama Naruto',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(30),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/kurama.jpeg',
+                        ),
+                      ),
                     ),
-                    textAlign: TextAlign.center,
+                    child: Center(
+                      child: Text(
+                        'Kurama Naruto',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 60,
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.amber,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
                   ),
                 ),
               ),
-              Container(
-                width: 300,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Colors.amber,
-                  borderRadius: BorderRadius.circular(30),
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                      'assets/kurama.jpeg',
-                    ),
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Kurama Naruto',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                'Terms & Conditions',
+                style: TextStyle(
+                  color: Colors.purple,
+                  fontSize: 20,
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
